@@ -5,7 +5,7 @@ const cors = require("cors");
 const upload = multer();
 const app = express();
 
-const port = 4000;
+const port = process.env.PORT || 4000;
  
 const moviesRoute = require("./routes/Movie.Route");
 
@@ -29,5 +29,5 @@ app.all("/", (req, res, next) => {
 
 app.use("/movies", moviesRoute); 
 
-// app.listen(port, () => console.log(`http://localhost:${port}`));
+app.listen(port, () => console.log(`:${port}`));
 module.exports = app;
