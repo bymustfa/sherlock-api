@@ -29,5 +29,5 @@ app.all("/", (req, res, next) => {
 
 app.use("/movies", moviesRoute); 
 
-app.listen(port, () => console.log(`http://localhost:${port}`));
+// app.listen(port, () => console.log(`http://localhost:${port}`));
 module.exports = app;
