@@ -4,8 +4,8 @@
   "main": "src/server.js",
   "license": "MIT",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon"
+    "start": "vercel dev",
+    "deploy" : "vercel deploy --prod"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
